@@ -1,0 +1,63 @@
+{
+  "name": "next-outdated-articles",
+  "description": "Forms for CS based on next",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "engines": {
+    "node": ">=7.7.3"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "now-deploy": "npm test && now --npm && now alias"
+  },
+  "keywords": [
+    "web quality",
+    "next",
+    "outdated articles",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/next-outdated-articles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/next-outdated-articles/issues"
+  },
+  "homepage": "https://github.com/telemark/next-outdated-articles",
+  "now": {
+    "alias": [
+      "outdated.next.t-fk.no"
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "type": "npm"
+  },
+  "devDependencies": {
+    "ava": "0.18.2",
+    "coveralls": "2.12.0",
+    "nsp": "2.6.3",
+    "nyc": "10.1.2",
+    "standard": "9.0.2"
+  },
+  "dependencies": {
+    "axios": "0.15.3",
+    "muicss": "0.9.12",
+    "next": "2.0.0-beta.39",
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
+  }
+}

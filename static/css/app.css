@@ -1,0 +1,25 @@
+body {
+    font-family: "Georgia", "Times", "Times New Roman", serif !important;
+    font-size: large;
+    background: white;
+    color: #000;
+}
+
+button.mui-btn {
+    background: #6ac4ae;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+button.mui-btn:hover {
+    background: #ffd520;
+    color: black;
+}
+
+.mui-textfield>input:focus, .mui-textfield>textarea:focus {
+    border-color: #6ac4ae;
+}
+.mui-textfield>input:focus~label, .mui-textfield>textarea:focus~label {
+    color: #6ac4ae;
+}
