@@ -35,7 +35,13 @@ export default class Index extends React.Component {
   async componentDidMount () {
     this.setState({loading: true})
     const data = await getSitemap()
-    const pages = filterSitemap({data: data, limitDays: this.state.limitDays})
+    const options = {
+      data: data,
+      limitDays: this.state.limitDays,
+      showOnly: this.state.showOnly,
+      filterBy: this.state.filterBy
+    }
+    const pages = filterSitemap(options)
     this.setState({data: data, pages: pages, loading: false})
   }
 
@@ -51,7 +57,13 @@ export default class Index extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault()
-    const pages = filterSitemap({data: this.state.data, limitDays: this.state.limitDays})
+    const options = {
+      data: this.state.data,
+      limitDays: this.state.limitDays,
+      showOnly: this.state.showOnly,
+      filterBy: this.state.filterBy
+    }
+    const pages = filterSitemap(options)
     this.setState({pages: pages})
     console.log(pages)
   }
@@ -66,6 +78,21 @@ export default class Index extends React.Component {
             <legend>Filter</legend>
             <Select name='showOny' defaultValue={this.state.showOnly} onChange={this.handleChange}>
               <Option value='' label='Alle' />
+              <Option value='Politikk' label='Politikk' />
+              <Option value='Vaare-tjenester' label='Våre tjenester' />
+              <Option value='Vaare-tjenester/Arealbruk-og-transport' label='Våre tjenester/Arealbruk og transport' />
+              <Option value='Vaare-tjenester/Folkehelse' label='Våre tjenester/Folkehelse' />
+              <Option value='Vaare-tjenester/Idrett' label='Våre tjenester/Idrett' />
+              <Option value='Vaare-tjenester/Internasjonalt-arbeid' label='Våre tjenester/Internasjonalt arbeid' />
+              <Option value='Vaare-tjenester/Kultur' label='Våre tjenester/Kultur' />
+              <Option value='Vaare-tjenester/Kulturminner' label='Våre tjenester/Kulturminner' />
+              <Option value='Vaare-tjenester/Miljoe-og-friluftsliv' label='Våre tjeneste/Miljø og friluftsliv' />
+              <Option value='Vaare-tjenester/Naeringsutvikling' label='Våre tjenester/Næringsutvikling' />
+              <Option value='Vaare-tjenester/Tannhelse' label='Våre tjenester/Tannhelse' />
+              <Option value='Vaare-tjenester/Utdanning' label='Våre tjenester/Utdanning' />
+              <Option value='Planer' label='Planer' />
+              <Option value='Fylkeskommunen' label='Fylkeskommunen' />
+              <Option value='Om-Telemark' label='Om Telemark' />
               <Option value='Aktuelt' label='Aktuelt' />
             </Select>
             <Input name='limitDays' label='Vis eldre enn' floatingLabel defaultValue={this.state.limitDays} onChange={this.handleChange} />
