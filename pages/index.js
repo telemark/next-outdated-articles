@@ -45,11 +45,16 @@ export default class Index extends React.Component {
     this.setState({data: data, pages: pages, loading: false})
   }
 
+  hideIfLoading () {
+    return this.state.loading ? 'hideMe' : 'showMe'
+  }
+
   handleChange (event) {
     const target = event.target
     const value = target.value
     const name = target.name
 
+    console.log(target.name)
     this.setState({
       [name]: value
     })
@@ -65,7 +70,6 @@ export default class Index extends React.Component {
     }
     const pages = filterSitemap(options)
     this.setState({pages: pages})
-    console.log(pages)
   }
 
   render () {
@@ -76,7 +80,7 @@ export default class Index extends React.Component {
           <h1 className='mui--text-title'>Utdaterte artikler</h1>
           <Form onSubmit={this.handleSubmit}>
             <legend>Filter</legend>
-            <Select name='showOny' defaultValue={this.state.showOnly} onChange={this.handleChange}>
+            <Select name='showOnly' defaultValue={this.state.showOnly} onChange={this.handleChange}>
               <Option value='' label='Alle' />
               <Option value='Politikk' label='Politikk' />
               <Option value='Vaare-tjenester' label='Våre tjenester' />
@@ -100,7 +104,9 @@ export default class Index extends React.Component {
             <Button variant='raised'>Oppdater filter</Button>
           </Form>
           <Loading loading={this.state.loading} />
-          <Articles pages={this.state.pages} />
+          {
+            this.state.pages.length > 0 ? <Articles pages={this.state.pages} /> : null
+          }
         </Container>
       </div>
     )

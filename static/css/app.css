@@ -23,3 +23,12 @@ button.mui-btn:hover {
 .mui-textfield>input:focus~label, .mui-textfield>textarea:focus~label {
     color: #6ac4ae;
 }
+
+.hideMe {
+    visibility: hidden;
+    display: none;
+}
+
+.showMe {
+    visibility: visible;
+}
