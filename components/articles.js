@@ -9,7 +9,7 @@ export default class Articles extends React.Component {
       <table>
         <thead>
           <tr>
-            <th>Alder (dager)</th>
+            <th>Dager</th>
             <th>Plassering</th>
             <th>Rediger</th>
           </tr>

@@ -77,23 +77,24 @@ export default class Index extends React.Component {
       <div>
         <Head />
         <Container fluid>
-          <h1 className='mui--text-title'>Utdaterte artikler</h1>
           <Form onSubmit={this.handleSubmit}>
-            <legend>Filter</legend>
+            <legend>Filterinnstillinger</legend>
             <Select name='showOnly' defaultValue={this.state.showOnly} onChange={this.handleChange}>
               <Option value='' label='Alle' />
               <Option value='Politikk' label='Politikk' />
               <Option value='Vaare-tjenester' label='Våre tjenester' />
               <Option value='Vaare-tjenester/Arealbruk-og-transport' label='Våre tjenester/Arealbruk og transport' />
               <Option value='Vaare-tjenester/Folkehelse' label='Våre tjenester/Folkehelse' />
+              <Option value='Vaare-tjenester/Friluftsliv' label='Våre tjenester/Friluftsliv' />
               <Option value='Vaare-tjenester/Idrett' label='Våre tjenester/Idrett' />
               <Option value='Vaare-tjenester/Internasjonalt-arbeid' label='Våre tjenester/Internasjonalt arbeid' />
+              <Option value='Vaare-tjenester/Klima-og-miljoe' label='Våre tjenester/Klima og miljø' />
               <Option value='Vaare-tjenester/Kultur' label='Våre tjenester/Kultur' />
               <Option value='Vaare-tjenester/Kulturminner' label='Våre tjenester/Kulturminner' />
-              <Option value='Vaare-tjenester/Miljoe-og-friluftsliv' label='Våre tjeneste/Miljø og friluftsliv' />
               <Option value='Vaare-tjenester/Naeringsutvikling' label='Våre tjenester/Næringsutvikling' />
               <Option value='Vaare-tjenester/Tannhelse' label='Våre tjenester/Tannhelse' />
               <Option value='Vaare-tjenester/Utdanning' label='Våre tjenester/Utdanning' />
+              <Option value='Vaare-tjenester/Verdensarv' label='Våre tjenester/Verdensarv' />
               <Option value='Planer' label='Planer' />
               <Option value='Fylkeskommunen' label='Fylkeskommunen' />
               <Option value='Om-Telemark' label='Om Telemark' />
@@ -101,7 +102,7 @@ export default class Index extends React.Component {
             </Select>
             <Input name='limitDays' label='Vis eldre enn' floatingLabel defaultValue={this.state.limitDays} onChange={this.handleChange} />
             <Input name='filterBy' label='Dropp følgende mapper' floatingLabel defaultValue={this.state.filterBy} onChange={this.handleChange} />
-            <Button variant='raised'>Oppdater filter</Button>
+            <Button variant='raised'>Oppdater listen</Button>
           </Form>
           <Loading loading={this.state.loading} />
           {
