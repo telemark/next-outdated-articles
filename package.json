@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=7.7.3"
+    "node": ">=7.7.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -56,7 +56,7 @@
   "dependencies": {
     "axios": "0.15.3",
     "muicss": "0.9.12",
-    "next": "2.0.0-beta.39",
+    "next": "2.0.0-beta.40",
     "react": "15.4.2",
     "react-dom": "15.4.2"
   }
