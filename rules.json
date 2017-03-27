@@ -1,0 +1,6 @@
+{
+  "rules": [
+    { "pathname": "/api/sitemap", "dest": "sitemap.t-fk.win" },
+    { "dest": "frontpage.outdated.next.t-fk.no" }
+  ]
+}

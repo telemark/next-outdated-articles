@@ -1,7 +1,7 @@
 {
   "name": "next-outdated-articles",
-  "description": "Forms for CS based on next",
-  "version": "1.0.0",
+  "description": "Solution for locating outdated articles",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "author": {
