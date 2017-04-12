@@ -1,7 +1,7 @@
 {
   "name": "next-outdated-articles",
   "description": "Solution for locating outdated articles",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "private": true,
   "author": {
@@ -54,7 +54,7 @@
     "standard": "10.0.1"
   },
   "dependencies": {
-    "next": "2.1.1",
+    "next": "2.1.0",
     "react-dom": "15.5.4",
     "react": "15.5.3",
     "axios": "0.16.1",
