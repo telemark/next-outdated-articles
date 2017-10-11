@@ -1,6 +1,6 @@
 {
   "rules": [
     { "pathname": "/api/sitemap", "dest": "sitemap.microservice.click" },
-    { "dest": "frontpage.outdated.next.t-fk.no" }
+    { "dest": "frontpage.outdated.microservice.click" }
   ]
 }
