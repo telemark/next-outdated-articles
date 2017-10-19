@@ -55,7 +55,7 @@
     "standard": "10.0.3"
   },
   "dependencies": {
-    "next": "4.0.3",
+    "next": "4.1.0",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "axios": "0.16.2",
