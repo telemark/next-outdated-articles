@@ -52,7 +52,7 @@
     "ava": "0.22.0",
     "nsp": "3.2.1",
     "nyc": "11.4.1",
-    "standard": "10.0.3"
+    "standard": "11.0.0"
   },
   "dependencies": {
     "next": "4.2.3",
