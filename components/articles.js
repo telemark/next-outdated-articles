@@ -17,15 +17,15 @@ export default class Articles extends React.Component {
         </thead>
         <tbody>
           {
-          this.props.pages.map(line =>
-            <tr>
-              <td>{line.age}</td>
-              <td>{line.loc.replace(config.baseUrl, '')}</td>
-              <td><a href={line.loc} target='_blank'>Vis</a></td>
-              <td><a href={line.loc.replace(config.baseUrl, `${config.baseUrl}/siteadmin`)} target='_blank'>Endre</a></td>
-            </tr>
-          )
-        }
+            this.props.pages.map(line =>
+              <tr>
+                <td>{line.age}</td>
+                <td>{line.loc.replace(config.baseUrl, '')}</td>
+                <td><a href={line.loc} target='_blank'>Vis</a></td>
+                <td><a href={line.loc.replace(config.baseUrl, `${config.baseUrl}/siteadmin`)} target='_blank'>Endre</a></td>
+              </tr>
+            )
+          }
         </tbody>
       </table>
     </div>

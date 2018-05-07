@@ -10,7 +10,7 @@
     "url": "https://github.com/zrrrzzt"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -18,10 +18,11 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "now-deploy": "npm run build && now out --static -n dashboard-outdated && now alias"
+    "deploy": "npm run build && now out --static -n dashboard-outdated && now alias"
   },
   "keywords": [
     "web quality",
