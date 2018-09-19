@@ -33,7 +33,7 @@ export default class Index extends React.Component {
   }
 
   async componentDidMount () {
-    this.setState({loading: true})
+    this.setState({ loading: true })
     const data = await getSitemap()
     const options = {
       data: data,
@@ -42,7 +42,7 @@ export default class Index extends React.Component {
       filterBy: this.state.filterBy
     }
     const pages = filterSitemap(options)
-    this.setState({data: data, pages: pages, loading: false})
+    this.setState({ data: data, pages: pages, loading: false })
   }
 
   hideIfLoading () {
@@ -69,7 +69,7 @@ export default class Index extends React.Component {
       filterBy: this.state.filterBy
     }
     const pages = filterSitemap(options)
-    this.setState({pages: pages})
+    this.setState({ pages: pages })
   }
 
   render () {
