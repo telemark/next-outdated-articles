@@ -1,5 +1,3 @@
-'use strict'
-
 import React from 'react'
 import Head from 'next/head'
 
@@ -8,7 +6,7 @@ export default () => (
     <Head>
       <title>Utdaterte artikler</title>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <link href='//cdn.muicss.com/mui-0.9.27/css/mui.min.css' rel='stylesheet' type='text/css' media='screen' />
+      <link href='//cdn.muicss.com/mui-0.9.41/css/mui.min.css' rel='stylesheet' type='text/css' media='screen' />
       <link href='static/css/app.css' rel='stylesheet' type='text/css' media='screen' />
       <link rel='icon' sizes='192x192' href='static/images/icons/chrome-touch-icon-192x192.png' />
       <link rel='apple-touch-icon' href='static/images/icons/apple-touch-icon-precomposed.png' />

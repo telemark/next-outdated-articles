@@ -22,7 +22,8 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "npm run build && now out --static -n dashboard-outdated && now alias"
+    "deploy": "npm run build && now out --static -n dashboard-outdated && now alias",
+    "cleanup": "rm -rf .next && rm -rf out"
   },
   "keywords": [
     "web quality",

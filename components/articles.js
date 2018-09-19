@@ -17,8 +17,8 @@ export default class Articles extends React.Component {
         </thead>
         <tbody>
           {
-            this.props.pages.map(line =>
-              <tr>
+            this.props.pages.map((line, index) =>
+              <tr key={index}>
                 <td>{line.age}</td>
                 <td>{line.loc.replace(config.baseUrl, '')}</td>
                 <td><a href={line.loc} target='_blank'>Vis</a></td>

@@ -1,5 +1,3 @@
-'use strict'
-
 import React from 'react'
 import Container from 'muicss/lib/react/container'
 import Form from 'muicss/lib/react/form'
@@ -10,7 +8,7 @@ import Option from 'muicss/lib/react/option'
 import Head from '../components/head'
 import Articles from '../components/articles'
 import Loading from '../components/loading'
-const getSitemap = require('../lib/get-sitemap')
+import getSitemap from '../lib/get-sitemap'
 const filterSitemap = require('../lib/filter-sitemap')
 
 export default class Index extends React.Component {
