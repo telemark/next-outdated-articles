@@ -1,6 +1,0 @@
-{
-  "rules": [
-    { "pathname": "/api/sitemap", "dest": "sitemap.tjeneste.win" },
-    { "dest": "frontpage.outdated.mikroside.win" }
-  ]
-}

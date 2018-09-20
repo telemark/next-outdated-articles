@@ -39,16 +39,6 @@
     "url": "https://github.com/telemark/next-outdated-articles/issues"
   },
   "homepage": "https://github.com/telemark/next-outdated-articles#readme",
-  "now": {
-    "name": "dashboard-outdated",
-    "alias": [
-      "outdated.mikroside.win"
-    ],
-    "env": {
-      "NODE_ENV": "production"
-    },
-    "type": "npm"
-  },
   "devDependencies": {
     "coveralls": "3.0.2",
     "ava": "0.25.0",
