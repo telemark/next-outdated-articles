@@ -1,0 +1,10 @@
+{
+  "name": "dashboard-outdated",
+  "alias": [
+    "utdatert.mikroside.win"
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "type": "npm"
+}
