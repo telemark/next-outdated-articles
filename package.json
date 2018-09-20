@@ -42,7 +42,7 @@
   "now": {
     "name": "dashboard-outdated",
     "alias": [
-      "frontpage.outdated.mikroside.win"
+      "outdated.mikroside.win"
     ],
     "env": {
       "NODE_ENV": "production"
