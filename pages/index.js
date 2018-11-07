@@ -81,7 +81,6 @@ export default class Index extends React.Component {
               <Option value='' label='Alle' />
               <Option value='Politikk' label='Politikk' />
               <Option value='Vaare-tjenester' label='Våre tjenester' />
-              <Option value='Vaare-tjenester/Arealbruk-og-transport' label='Våre tjenester/Arealbruk og transport' />
               <Option value='Vaare-tjenester/Folkehelse' label='Våre tjenester/Folkehelse' />
               <Option value='Vaare-tjenester/Friluftsliv' label='Våre tjenester/Friluftsliv' />
               <Option value='Vaare-tjenester/Idrett' label='Våre tjenester/Idrett' />
@@ -90,6 +89,7 @@ export default class Index extends React.Component {
               <Option value='Vaare-tjenester/Kultur' label='Våre tjenester/Kultur' />
               <Option value='Vaare-tjenester/Kulturminner' label='Våre tjenester/Kulturminner' />
               <Option value='Vaare-tjenester/Naeringsutvikling' label='Våre tjenester/Næringsutvikling' />
+              <Option value='Vaare-tjenester/Samferdsel-og-regional-utvikling' label='Våre tjenester/Samferdsel og regional utvikling' />
               <Option value='Vaare-tjenester/Tannhelse' label='Våre tjenester/Tannhelse' />
               <Option value='Vaare-tjenester/Utdanning' label='Våre tjenester/Utdanning' />
               <Option value='Vaare-tjenester/Verdensarv' label='Våre tjenester/Verdensarv' />
