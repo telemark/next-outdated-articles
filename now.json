@@ -1,10 +1,10 @@
 {
+  "version": 2,
   "name": "dashboard-outdated",
   "alias": [
     "utdatert.mikroside.win"
   ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "type": "npm"
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "out" }}
+  ]
 }

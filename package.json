@@ -21,8 +21,9 @@
     "refresh": "rm -rf node_modules && rm package-lock.json && npm install",
     "dev": "next",
     "build": "next build && next export",
+    "now-build": "next build && next export",
     "start": "next start",
-    "deploy": "npm run build && now out --static -n dashboard-outdated && now alias",
+    "deploy": "npm test && now && now alias",
     "cleanup": "rm -rf .next && rm -rf out"
   },
   "keywords": [
