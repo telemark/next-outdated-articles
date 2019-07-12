@@ -1,10 +1,11 @@
 {
   "version": 2,
   "name": "dashboard-outdated",
+  "scope": "kommunikasjon",
   "alias": [
     "utdatert.mikroside.win"
   ],
   "builds": [
-    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "out" }}
+    { "src": "package.json", "use": "@now/next" }
   ]
 }

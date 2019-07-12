@@ -5,6 +5,18 @@
 
 Solution for locating outdated articles
 
+# Development
+
+```
+$ npm run dev
+```
+
+# Deploy to ZEIT/Now
+
+```
+$ npm run deploy
+```
+
 ## License
 
 [MIT](LICENSE)
