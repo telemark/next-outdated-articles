@@ -3,7 +3,7 @@
 
 # next-outdated-articles
 
-Solution for locating outdated articles
+Solution for locating outdated articles [utdatert.tjeneste.win](https://utdatert.tjeneste.win)
 
 # Development
 

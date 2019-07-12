@@ -1,9 +1,9 @@
 {
   "version": 2,
   "name": "dashboard-outdated",
-  "scope": "kommunikasjon",
+  "scope": "telemark-dev",
   "alias": [
-    "utdatert.mikroside.win"
+    "utdatert.tjeneste.win"
   ],
   "builds": [
     { "src": "package.json", "use": "@now/next" }
