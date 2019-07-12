@@ -1,7 +1,7 @@
 {
   "name": "next-outdated-articles",
   "description": "Solution for locating outdated articles",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "license": "MIT",
   "private": true,
   "author": {
