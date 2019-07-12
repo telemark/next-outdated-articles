@@ -1,5 +1,6 @@
 # IDE
 .idea
+.vc
 .vscode
 
 # Mac OS
@@ -46,6 +47,3 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-
-# Lock files
-package-lock.json
