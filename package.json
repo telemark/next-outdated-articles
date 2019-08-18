@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/telemark/next-outdated-articles#readme",
   "devDependencies": {
-    "ava": "2.2.0",
+    "ava": "2.3.0",
     "babel-eslint": "10.0.2",
     "coveralls": "3.0.6",
     "nyc": "14.1.1",
