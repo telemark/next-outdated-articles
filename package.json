@@ -51,7 +51,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "axios": "0.19.0",
-    "muicss": "0.9.43"
+    "muicss": "0.10.2"
   },
   "standard": {
     "ignore": [
